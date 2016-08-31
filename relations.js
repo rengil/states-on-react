@@ -42,10 +42,11 @@ var Messager = React.createClass({
   },
 
   changeMyProp: function () {
-    this.ref('mudei');
+    this.props.message = 'a'
   },
 
 	render: function () {
+  	console.log('render');
   	return (
     	<div>
         <div> {this.props.message} </div>
